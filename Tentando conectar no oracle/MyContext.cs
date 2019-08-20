@@ -16,9 +16,9 @@ namespace Tentando_conectar_no_oracle
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Produto>().ToTable("PRODUTOS").Property(p => p.Codigo).HasColumnName("CODIGO");
-            modelBuilder.Entity<Produto>().ToTable("PRODUTOS").Property(p => p.Descricao).HasColumnName("DESCRICAO");
-            modelBuilder.Entity<Produto>().ToTable("PRODUTOS").Property(p => p.DataRegistro).HasColumnName("DATAREGISTRO");
+            modelBuilder.Entity<Produto>().ToTable("Produtos").Property(p => p.Codigo).HasColumnName("Id");
+            modelBuilder.Entity<Produto>().ToTable("Produtos").Property(p => p.Descricao).HasColumnName("Descricao");
+            modelBuilder.Entity<Produto>().ToTable("Produtos").Property(p => p.DataRegistro).HasColumnName("DataRegistro");
 
 
         }
